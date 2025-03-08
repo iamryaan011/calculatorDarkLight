@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora - Dark/Light</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <section>
+      <input
+        type="checkbox"
+        name="theme"
+        id="themeButton"
+        onclick="changeUserPreference()"
+      />
+
+      <article id="resultDisplay"></article>
+
+      <article class="line">
+        <button onclick="Calculate('CE')">CE</button>
+        <button onclick="Calculate('C')">C</button>
+        <button id="backspaceButton" onclick="backSpaceButton('delete')">
+          <img src="img/backspace-light.png" alt="backspace button" />
+        </button>
+        <button onclick="Calculate('/')">÷</button>
+      </article>
+
+      <article class="line">
+        <button value="7" onclick="Calculate(7)">7</button>
+        <button value="8" onclick="Calculate(8)">8</button>
+        <button value="9" onclick="Calculate(9)">9</button>
+        <button value="*" onclick="Calculate('*')">×</button>
+      </article>
+
+      <article class="line">
+        <button value="4" onclick="Calculate(4)">4</button>
+        <button value="5" onclick="Calculate(5)">5</button>
+        <button value="6" onclick="Calculate(6)">6</button>
+        <button value="-" onclick="Calculate('-')">-</button>
+      </article>
+
+      <article class="line">
+        <button value="1" onclick="Calculate(1)">1</button>
+        <button value="2" onclick="Calculate(2)">2</button>
+        <button value="3" onclick="Calculate(3)">3</button>
+        <button value="+" onclick="Calculate('+')">+</button>
+      </article>
+
+      <article class="line">
+
+        <button value="." onclick="Calculate('.')">.</button>
+        <button value="0" onclick="Calculate(0)">0</button>
+        <button id="equalButton" onclick="Calculate('=')">=</button>
+      </article>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

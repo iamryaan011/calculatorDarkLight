@@ -1,0 +1,160 @@
+:root {
+    --body: #fff;
+
+    --backgroundColor: #fafafa;
+
+    --bgColorButtonHover: #ebebeb;
+    --bgButton: #efefef;
+    --boxShadowButton: #cbcaca;
+
+    --font: #4b4b4d;
+    --border: #d9d9d9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    margin: 0 auto;
+
+    font-family: sans-serif;
+}
+
+/* Light Mode: On */
+
+body, html {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-color: var(--body);
+
+    transition: background 0.3s, color 0.3s;
+}
+
+section input[type="checkbox"] {
+    position: relative;
+    left: 35%;
+    bottom: 5%;
+    
+    appearance: none;
+
+    color: var(--font);
+}
+
+section input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+section input[type="checkbox"]::after {
+    content: 'Dark Mode: Off';
+
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+section {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--border);
+    border-radius: 8px;
+
+    padding: 32px;
+
+    background-color: var(--backgroundColor);
+}
+
+section article#resultDisplay {
+    background-color: #00800042;
+
+    border: 2px solid #015a013f;
+    border-radius: 8px;
+
+    padding: 16px;
+    margin: 8px 0;
+
+    width: 100%;
+    height: 64px;
+
+    font-size: 24px;
+
+    color: var(--font);
+
+    text-align: right;
+}
+
+section article.line {
+    display: flex;
+
+    flex-direction: row;
+}
+
+section article > button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 0;
+    height: 0;
+
+    padding: 32px;
+    margin: 2px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: bolder;
+    font-size: 16px;
+
+    color: var(--font);
+
+    background-color: var(--bgButton);
+
+    box-shadow: 2px 3px 1px 0px var(--boxShadowButton);
+}
+
+section article > button:hover {
+    background-color: #ebebeb;
+}
+
+section article > button:focus {
+    position: relative;
+
+    top: 2px;
+    left: 2px;
+
+    border: none;
+    outline: none;
+}
+
+section article > button#equalButton {
+    background-color: #1e90ff;
+
+    box-shadow: 2px 3px 1px 0px #3b75ad;
+
+    color: #fff;
+}
+
+section article > button > img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Dark Mode: On */
+
+input[type="checkbox"]:checked::after {
+    content: 'Dark Mode: On';
+}
