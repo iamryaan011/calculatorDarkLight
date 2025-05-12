@@ -2,7 +2,7 @@
 Calculadora aritmética simples que realiza suas devidas operações com um diferencial de alternância entre os modos dark mode e light mode.
 
 ## 🚀 Demonstração
-Confira a aplicação ao vivo: <a href="https://pokewild.vercel.app/">pokewild.vercel.app</a>
+Confira a aplicação ao vivo: <a href="https://calculator-dark-light-snowy.vercel.app/">https://calculator-dark-light-snowy.vercel.app/</a>
 
 ## 🛠️ Tecnologias Utilizadas
 <br/>HTML;
